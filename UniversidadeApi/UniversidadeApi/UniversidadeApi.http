@@ -1,0 +1,14 @@
+@UniversidadeApi_HostAddress = https://localhost:7245
+
+GET {{UniversidadeApi_HostAddress}}/api/aluno
+
+###
+
+@nome=string
+@matricula=string
+@nascimento=2026-04-29T11:45:21.3892312+00:00
+@ingresso=2026-04-29T11:45:21.3892312+00:00
+@curso=string
+POST {{UniversidadeApi_HostAddress}}/api/aluno?nome={{nome}}&matricula={{matricula}}&nascimento={{nascimento}}&ingresso={{ingresso}}&curso={{curso}}
+
+###
