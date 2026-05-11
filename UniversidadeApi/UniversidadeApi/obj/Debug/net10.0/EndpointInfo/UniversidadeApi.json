@@ -183,6 +183,52 @@
         }
       }
     },
+    "/api/Aluno_Materia/cadastros/aluno/{id}": {
+      "get": {
+        "tags": [
+          "Aluno_Materia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Aluno_Materia/cadastros/materia/{id}": {
+      "get": {
+        "tags": [
+          "Aluno_Materia"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Aluno_Materia/{id}": {
       "put": {
         "tags": [

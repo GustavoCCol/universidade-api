@@ -14,5 +14,6 @@ namespace UniversidadeApi.Models
         public DateTime DATA_NASCIMENTO { get; set; }
         public DateTime DATA_INGRESSO { get; set; }
         public string? CURSO { get; set; }
+        //public ICollection<Aluno_Materia> aluno_Materias { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Reader;
 using Serilog;
 using Serilog.Events;
 using System.Configuration;
+using System.Text.Json.Serialization;
 using UniversidadeApi.Infrastucture.Context;
 using UniversidadeApi.Infrastucture.Interfaces;
 
@@ -20,6 +21,8 @@ builder.Host.UseSerilog((ctx, lc) => lc
 
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers().AddJsonOptions(x =>
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

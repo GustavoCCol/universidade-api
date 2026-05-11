@@ -2137,11 +2137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+      "projectUniqueName": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
       "projectName": "UniversidadeApi",
-      "projectPath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+      "projectPath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
       "packagesPath": "C:\\Users\\p0600861\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\obj\\",
+      "outputPath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

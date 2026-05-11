@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gLFq6LdG7HA=",
+  "dgSpecHash": "dyqIOdykUvA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+  "projectFilePath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\p0600861\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\p0600861\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
@@ -53,9 +53,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "O pacote 'Oracle.ManagedDataAccess 23.26.200' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net10.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "projectPath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+      "projectPath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+      "filePath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
       "libraryId": "Oracle.ManagedDataAccess",
       "targetGraphs": [
         "net10.0"
@@ -65,9 +65,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "O pacote 'Oracle.ManagedDataAccess.EntityFramework 23.26.200' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net10.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "projectPath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+      "projectPath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\p0600861\\source\\repos\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
+      "filePath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\UniversidadeApi.csproj",
       "libraryId": "Oracle.ManagedDataAccess.EntityFramework",
       "targetGraphs": [
         "net10.0"

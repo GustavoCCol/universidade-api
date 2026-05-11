@@ -42,6 +42,21 @@ namespace UniversidadeApi.Controllers
             return Ok(aluno_materia_res);
         }
 
+        [HttpGet("cadastros/aluno/{id}")]
+        public IActionResult GetCadastrosAlunoById (int id)
+        {
+            var cadastros = _aluno_MateriaRepository.GetCadastrosAlunoById(id);
+            if (cadastros == null) return BadRequest($"Id {id} inválido");
+            return Ok(cadastros);
+        }
+
+        [HttpGet("cadastros/materia/{id}")]
+        public IActionResult GetCadastrosMateriaById (int id)
+        {
+            var cadastros = _aluno_MateriaRepository.GetCadastrosMateriaById(id);
+            if (cadastros == null) return BadRequest($"Id {id} inválido");
+            return Ok(cadastros);
+        }
         [HttpPost]
         public IActionResult Add([FromBody] Aluno_MateriaDTO aluno_materia_recebido)
         {

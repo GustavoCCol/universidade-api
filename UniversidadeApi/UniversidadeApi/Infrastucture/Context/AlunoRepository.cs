@@ -2,6 +2,8 @@
 using UniversidadeApi.Infrastucture.Interfaces;
 using UniversidadeApi.Models;
 using Serilog;
+using System.Linq.Expressions;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace UniversidadeApi.Infrastucture.Context
 {
@@ -37,7 +39,6 @@ namespace UniversidadeApi.Infrastucture.Context
         {
             Log.Information("Mostrou um aluno");
             return _context.Alunos.Find(id);
-            
         }
 
         public void Update(Aluno aluno_novo)

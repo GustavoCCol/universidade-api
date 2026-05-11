@@ -21,7 +21,7 @@ namespace UniversidadeApi.Infrastucture.Context
             con.Open();
         }*/
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Modelos para Aluno_materia
             modelBuilder.Entity<Aluno_Materia>()
@@ -40,6 +40,6 @@ namespace UniversidadeApi.Infrastucture.Context
             modelBuilder.Entity<Nota>()
                 .HasOne(a => a.Materia).WithMany()
                 .HasForeignKey(a => a.MATERIA_ID);
-        }
+        }*/
     }
 }

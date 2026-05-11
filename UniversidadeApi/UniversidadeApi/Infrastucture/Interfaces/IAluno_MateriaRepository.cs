@@ -10,6 +10,10 @@ namespace UniversidadeApi.Infrastucture.Interfaces
 
         IEnumerable<Object> GetAllDesc(); 
 
+        IEnumerable<Object> GetCadastrosAlunoById(int id);
+
+        IEnumerable<Object> GetCadastrosMateriaById(int id);
+
         //(GET) matrícula específica
         Aluno_Materia Get(int id);
 

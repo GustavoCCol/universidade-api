@@ -90,6 +90,38 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
+    "Method": "GetCadastrosAlunoById",
+    "RelativePath": "api/Aluno_Materia/cadastros/aluno/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
+    "Method": "GetCadastrosMateriaById",
+    "RelativePath": "api/Aluno_Materia/cadastros/materia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
     "Method": "GetAllDesc",
     "RelativePath": "api/Aluno_Materia/descricao",
     "HttpMethod": "GET",

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System.Globalization;
 using UniversidadeApi.DTOs;
 using UniversidadeApi.Infrastucture.Interfaces;
@@ -31,6 +32,11 @@ namespace UniversidadeApi.Controllers
         {
             var aluno = _alunoRepository.Get(id);
             
+            if (aluno == null)
+            {
+                Log.Error("Not found");
+                return NotFound(id);
+            }
             return Ok(aluno);
         }
         
