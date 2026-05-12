@@ -1,9 +1,9 @@
-﻿using Serilog;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Org.BouncyCastle.Crypto.Engines;
+using Serilog;
 using System.Diagnostics.CodeAnalysis;
 using UniversidadeApi.Infrastucture.Interfaces;
 using UniversidadeApi.Models;
-//_context.Alunos.Include[EntityFramework].ToList()
-//Linq
 
 namespace UniversidadeApi.Infrastucture.Context
 {
@@ -15,48 +15,116 @@ namespace UniversidadeApi.Infrastucture.Context
         {
             _context = context;
         }
-        public void Add(Nota nota)
+        public bool Adicionar(Nota nota)
         {
+            if (!AlunoExiste(nota.ALUNO_ID))
+            {
+                Log.Error("Aluno incorreto");
+                return false;
+            }
+            if (!MateriaExiste(nota.MATERIA_ID))
+            {
+                Log.Error("Matéria incorreta");
+                return false; 
+            }
+            if (!CadastroExiste(nota.MATERIA_ID, nota.ALUNO_ID))
+            {
+                Log.Error("Cadastro incorreto, matéria ou aluno não cadastrados");
+                return false;
+            }
+            if (nota.NOTA < 0 || nota.NOTA > 10)
+            {
+                Log.Error("Nota com valor incorreto");
+                return false; 
+            }
+            if (!(Enumerable.Range(1, 4).Contains(nota.BIMESTRE)))
+            {
+                Log.Error("Bimestre com valor incorreto");
+                return false;
+            }
             _context.Notas.Add(nota);
             _context.SaveChanges();
             Log.Information("Adicionou uma nota");
+            return true;
         }
 
-        public void Delete(Nota nota)
+        public void Deletar(Nota nota)
         {
             _context.Notas.Remove(nota);
             _context.SaveChanges();
             Log.Information("Removeu uma nota");
         }
 
-        public List<Nota> GetAll()
+        public List<Nota> ObterTodas()
         {
             Log.Information("Mostrou todas as notas");
             return _context.Notas.ToList();
         }
 
-        public IEnumerable<Object> GetAllDesc()
+        public IEnumerable<Object> ObterTodasDesc()
         {
-            var desc = _context.Notas.Select(a => new
+            Log.Information("Mostrou todas as notas com desc");
+            return _context.Notas.Select(a => new
             {
                 aluno_id = a.ALUNO_ID,
                 aluno = a.Aluno,
                 materia_id = a.MATERIA_ID,
-                materia = a.Materia
+                materia = a.Materia,
+                Nota = a.NOTA,
+                Bimestre = a.BIMESTRE
             }).ToList();
-
-            var all = _context.Notas.ToList();
-            Log.Information("Mostrou todas as notas com desc");
-            return all.Cast<Object>().ToList();
         }
 
-        public Nota Get(int id)
+        public IEnumerable<Object> ObterPorBimestre(int bimestre, int aluno_id)
+        {
+            if (!AlunoExiste(aluno_id)) return null;
+            var notas_bimestre = _context.Notas
+                .Where(n => (n.BIMESTRE == bimestre) && (n.ALUNO_ID == aluno_id))
+                .Select(nb => new
+                {
+                    aluno_nome = nb.Aluno.NOME,
+                    materia_nome = nb.Materia.NOME,
+                    nota = nb.NOTA,
+                    bimestre = nb.BIMESTRE
+                }).ToList();
+            return notas_bimestre;
+        }
+        public IEnumerable<Object> ObterPorMateria(int materia_id, int aluno_id)
+        {
+            if (!AlunoExiste(aluno_id)) return null;
+            if (!MateriaExiste(materia_id)) return null;
+            if (!CadastroExiste(materia_id, aluno_id)) return null;
+            var notas_materia = _context.Notas
+                .Where(n => (n.MATERIA_ID == materia_id) && (n.ALUNO_ID == aluno_id))
+                .Select(nm => new
+                {
+                    materia_nome = nm.Materia.NOME,
+                    aluno_nome = nm.Aluno.NOME,
+                    Nota = nm.NOTA,
+                    Bimestre = nm.BIMESTRE
+                }).ToList();
+            return notas_materia;
+        }
+        public bool AlunoExiste(int aluno_id)
+        {
+            return _context.Alunos.FirstOrDefault(a => a.ID == aluno_id) != null;
+        }
+        public bool MateriaExiste(int materia_id)
+        {
+            return _context.Materias.FirstOrDefault(m => m.ID == materia_id) != null;
+        }
+        public bool CadastroExiste(int materia_id,  int aluno_id)
+        {
+            return _context.Alunos_Materias.Where(c => (c.MATERIA_ID == materia_id) && (c.ALUNO_ID == aluno_id)) != null;
+        }
+
+        public Nota Obter(int id)
         {
             Log.Information("Mostrou uma nota");
             return _context.Notas.Find(id);
         }
 
-        public void Update(Nota nota)
+        public void Atualizar(Nota nota)
         {
             var nota_antiga = _context.Notas.Find(nota.ID);
             {

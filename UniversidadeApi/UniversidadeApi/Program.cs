@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi;
 using Microsoft.OpenApi.Reader;
 using Serilog;
@@ -16,16 +17,11 @@ var configuration_logs = new ConfigurationBuilder()
 
 builder.Host.UseSerilog((ctx, lc) => lc
     .MinimumLevel.Information()
-    //.WriteTo.File("C:/Users/p0600861/Desktop/logs/teste.txt", rollingInterval: RollingInterval.Day)
     .ReadFrom.Configuration(configuration_logs));
 
-// Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllers().AddJsonOptions(x =>
-   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 builder.Services.AddTransient<IAlunoRepository, AlunoRepository>();
@@ -33,7 +29,6 @@ builder.Services.AddTransient<IAluno_MateriaRepository, Aluno_MateriaRepository>
 builder.Services.AddTransient<IMateriaRepository, MateriaRepository>();
 builder.Services.AddTransient<INotaRepository, NotaRepository>();
 
-//Colocar connection string dentro do AppSettings.JSON
 builder.Services.AddDbContext<ConnectionContext>(options => options.UseOracle("Data Source=localhost:1521/xepdb1;User ID=UNIVERSIDADE;Password=senha123;Persist Security Info=True; Connect Timeout=3000;"));
 
 builder.Services.AddSwaggerGen(options =>
@@ -47,7 +42,6 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

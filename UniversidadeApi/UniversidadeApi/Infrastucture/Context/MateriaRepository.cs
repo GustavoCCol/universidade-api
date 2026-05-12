@@ -12,34 +12,34 @@ namespace UniversidadeApi.Infrastucture.Context
         {
             _context = context;
         }
-        public void Add(Materia materia)
+        public void Adicionar(Materia materia)
         {
             _context.Materias.Add(materia);
             _context.SaveChanges();
             Log.Information("Adicionou uma matéria");
         }
 
-        public void Delete(Materia materia)
+        public void Deletar(Materia materia)
         {
             _context.Materias.Remove(materia);
             _context.SaveChanges();
             Log.Information("Removeu uma matéria");
         }
 
-        public List<Materia> GetAll()
+        public List<Materia> ObterTodas()
         {
             Log.Information("Mostrou todas as matérias");
             return _context.Materias.ToList();
         }
 
-        public Materia Get(int id)
+        public Materia Obter(int id)
         {
             var materia = _context.Materias.Find(id);
             Log.Information("Mostrou uma matéria");
             return materia;
         }
 
-        public void Update(Materia materia)
+        public void Atualizar(Materia materia)
         {
             var materia_antiga = _context.Materias.Find(materia.ID);
             {

@@ -21,16 +21,16 @@ namespace UniversidadeApi.Controllers
         CultureInfo br = new CultureInfo("pt-BR");
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult ObterTodos()
         {
-            var alunos = _alunoRepository.GetAll();
+            var alunos = _alunoRepository.ObterTodos();
 
             return Ok(alunos);
         }
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult Obter(int id)
         {
-            var aluno = _alunoRepository.Get(id);
+            var aluno = _alunoRepository.Obter(id);
             
             if (aluno == null)
             {
@@ -41,7 +41,7 @@ namespace UniversidadeApi.Controllers
         }
         
         [HttpPost]
-        public IActionResult Add([FromBody] AlunoDTO aluno_recebido)
+        public IActionResult Adicionar([FromBody] AlunoDTO aluno_recebido)
         {
             Aluno aluno = new Aluno();
             {
@@ -56,13 +56,13 @@ namespace UniversidadeApi.Controllers
                 aluno.DATA_INGRESSO = ingresso_aluno;
             }
             
-            _alunoRepository.Add(aluno);
+            _alunoRepository.Adicionar(aluno);
 
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] AlunoDTO aluno_recebido)
+        public IActionResult Atualizar(int id, [FromBody] AlunoDTO aluno_recebido)
         {
             Aluno aluno = new Aluno();
             {
@@ -78,18 +78,18 @@ namespace UniversidadeApi.Controllers
 
                 aluno.ID = id;
             }
-            _alunoRepository.Update(aluno);
+            _alunoRepository.Atualizar(aluno);
             
             return Ok(aluno);
         }
 
         [HttpDelete("{id}")]
 
-        public void Delete(int id)
+        public void Deletar(int id)
         {
-            var aluno_deletado = _alunoRepository.Get(id);
+            var aluno_deletado = _alunoRepository.Obter(id);
             
-            _alunoRepository.Delete(aluno_deletado);
+            _alunoRepository.Deletar(aluno_deletado);
         }
 
     }

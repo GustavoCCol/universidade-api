@@ -15,33 +15,33 @@ namespace UniversidadeApi.Infrastucture.Context
         {
             _context = context;
         }
-        public void Add(Aluno aluno)
+        public void Adicionar(Aluno aluno)
         {
             _context.Alunos.Add(aluno);
             _context.SaveChanges();
             Log.Information("Adicionou um aluno");
         }
 
-        public void Delete(Aluno aluno)
+        public void Deletar(Aluno aluno)
         {
             _context.Alunos.Remove(aluno);
             _context.SaveChanges();
             Log.Information("Deletou um aluno aluno");
         }
 
-        public List<Aluno> GetAll()
+        public List<Aluno> ObterTodos()
         {
             Log.Information("Mostrou todos os alunos");
             return _context.Alunos.ToList();
         }
         
-        public Aluno Get(int id)
+        public Aluno Obter(int id)
         {
             Log.Information("Mostrou um aluno");
             return _context.Alunos.Find(id);
         }
 
-        public void Update(Aluno aluno_novo)
+        public void Atualizar(Aluno aluno_novo)
         {
             var aluno_antigo = _context.Alunos.Find(aluno_novo.ID);
             {

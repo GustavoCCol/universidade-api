@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "UniversidadeApi.Controllers.AlunoController",
-    "Method": "GetAll",
+    "Method": "ObterTodos",
     "RelativePath": "api/Aluno",
     "HttpMethod": "GET",
     "IsController": true,
@@ -11,7 +11,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.AlunoController",
-    "Method": "Add",
+    "Method": "Adicionar",
     "RelativePath": "api/Aluno",
     "HttpMethod": "POST",
     "IsController": true,
@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "GetAll",
+    "Method": "ObterTodos",
     "RelativePath": "api/Aluno_Materia",
     "HttpMethod": "GET",
     "IsController": true,
@@ -37,7 +37,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "Add",
+    "Method": "Adicionar",
     "RelativePath": "api/Aluno_Materia",
     "HttpMethod": "POST",
     "IsController": true,
@@ -53,7 +53,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "Update",
+    "Method": "Atualizar",
     "RelativePath": "api/Aluno_Materia/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -74,7 +74,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "Delete",
+    "Method": "Deletar",
     "RelativePath": "api/Aluno_Materia/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -90,7 +90,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "GetCadastrosAlunoById",
+    "Method": "ObterCadastrosAlunoPorId",
     "RelativePath": "api/Aluno_Materia/cadastros/aluno/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -106,7 +106,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "GetCadastrosMateriaById",
+    "Method": "ObterCadastrosMateriaPorId",
     "RelativePath": "api/Aluno_Materia/cadastros/materia/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -122,7 +122,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.Aluno_MateriaController",
-    "Method": "GetAllDesc",
+    "Method": "ObterTodosDesc",
     "RelativePath": "api/Aluno_Materia/descricao",
     "HttpMethod": "GET",
     "IsController": true,
@@ -132,7 +132,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.AlunoController",
-    "Method": "Get",
+    "Method": "Obter",
     "RelativePath": "api/Aluno/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -148,7 +148,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.AlunoController",
-    "Method": "Update",
+    "Method": "Atualizar",
     "RelativePath": "api/Aluno/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -169,7 +169,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.AlunoController",
-    "Method": "Delete",
+    "Method": "Deletar",
     "RelativePath": "api/Aluno/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -191,7 +191,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.MateriaController",
-    "Method": "GetAll",
+    "Method": "ObterTodas",
     "RelativePath": "api/Materia",
     "HttpMethod": "GET",
     "IsController": true,
@@ -201,7 +201,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.MateriaController",
-    "Method": "Add",
+    "Method": "Adicionar",
     "RelativePath": "api/Materia",
     "HttpMethod": "POST",
     "IsController": true,
@@ -217,7 +217,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.MateriaController",
-    "Method": "Get",
+    "Method": "Obter",
     "RelativePath": "api/Materia/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -233,7 +233,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.MateriaController",
-    "Method": "Update",
+    "Method": "Atualizar",
     "RelativePath": "api/Materia/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -254,7 +254,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.MateriaController",
-    "Method": "Delete",
+    "Method": "Deletar",
     "RelativePath": "api/Materia/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -270,7 +270,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.NotaController",
-    "Method": "GetAll",
+    "Method": "ObterTodas",
     "RelativePath": "api/Nota",
     "HttpMethod": "GET",
     "IsController": true,
@@ -280,7 +280,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.NotaController",
-    "Method": "Add",
+    "Method": "Adicionar",
     "RelativePath": "api/Nota",
     "HttpMethod": "POST",
     "IsController": true,
@@ -296,7 +296,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.NotaController",
-    "Method": "Get",
+    "Method": "Obter",
     "RelativePath": "api/Nota/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -312,7 +312,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.NotaController",
-    "Method": "Update",
+    "Method": "Atualizar",
     "RelativePath": "api/Nota/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -333,7 +333,7 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.NotaController",
-    "Method": "Delete",
+    "Method": "Deletar",
     "RelativePath": "api/Nota/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -349,12 +349,54 @@
   },
   {
     "ContainingType": "UniversidadeApi.Controllers.NotaController",
-    "Method": "GetAllDesc",
+    "Method": "ObterPorBimestre",
+    "RelativePath": "api/Nota/bimestre/{bimestre}/{aluno_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bimestre",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "aluno_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversidadeApi.Controllers.NotaController",
+    "Method": "ObterTodasDesc",
     "RelativePath": "api/Nota/descricao",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UniversidadeApi.Controllers.NotaController",
+    "Method": "ObterPorMateria",
+    "RelativePath": "api/Nota/materia/{materia_id}/{aluno_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "materia_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "aluno_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

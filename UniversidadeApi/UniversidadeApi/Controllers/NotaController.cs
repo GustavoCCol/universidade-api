@@ -18,28 +18,42 @@ namespace UniversidadeApi.Controllers
         }
         
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult ObterTodas()
         {
-            var notas = _notaRepository.GetAll();
+            var notas = _notaRepository.ObterTodas();
             return Ok(notas);
         }
 
         [HttpGet("descricao")]
-        public IActionResult GetAllDesc()
+        public IActionResult ObterTodasDesc()
         {
-            var notas_res = _notaRepository.GetAllDesc();
+            var notas_res = _notaRepository.ObterTodasDesc();
             return Ok(notas_res);
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult Obter(int id)
         {
-            var nota = _notaRepository.Get(id);
+            var nota = _notaRepository.Obter(id);
             return Ok(nota);
         }
 
+        [HttpGet("bimestre/{bimestre}/{aluno_id}")]
+        public IActionResult ObterPorBimestre(int bimestre, int aluno_id)
+        {
+            var notas = _notaRepository.ObterPorBimestre(bimestre, aluno_id);
+            if (notas == null) return NotFound("Aluno ou bimestre inválido");
+            return Ok(notas);
+        }
+        [HttpGet("materia/{materia_id}/{aluno_id}")]
+        public IActionResult ObterPorMateria(int materia_id, int aluno_id)
+        {
+            var notas = _notaRepository.ObterPorMateria(materia_id, aluno_id);
+            if (notas == null) return NotFound("Aluno ou materia inválido(a)");
+            return Ok(notas);
+        }
         [HttpPost]
-        public IActionResult Add([FromBody] NotaDTO nota_recebida)
+        public IActionResult Adicionar([FromBody] NotaDTO nota_recebida)
         {
             var nota = new Nota();
             {
@@ -49,13 +63,13 @@ namespace UniversidadeApi.Controllers
                 nota.NOTA = nota_recebida.Nota;
             }
 
-            _notaRepository.Add(nota);
-            
+            bool add = _notaRepository.Adicionar(nota);
+            if (!add) return BadRequest("Não foi possível adicionar nota, verificar valores colocados");
             return Ok(nota);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] NotaDTO nota_recebida)
+        public IActionResult Atualizar(int id, [FromBody] NotaDTO nota_recebida)
         {
             var nota = new Nota();
             {
@@ -66,15 +80,15 @@ namespace UniversidadeApi.Controllers
                 nota.NOTA = nota_recebida.Nota;
             }
 
-            _notaRepository.Update(nota);
+            _notaRepository.Atualizar(nota);
 
             return Ok(nota);
         }
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public IActionResult Deletar(int id)
         {
-            var nota = _notaRepository.Get(id);
-            _notaRepository.Delete(nota);
+            var nota = _notaRepository.Obter(id);
+            _notaRepository.Deletar(nota);
             return Ok(nota);
         }
     }

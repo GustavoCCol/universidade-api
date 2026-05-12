@@ -553,6 +553,70 @@
           }
         }
       }
+    },
+    "/api/Nota/bimestre/{bimestre}/{aluno_id}": {
+      "get": {
+        "tags": [
+          "Nota"
+        ],
+        "parameters": [
+          {
+            "name": "bimestre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "aluno_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Nota/materia/{materia_id}/{aluno_id}": {
+      "get": {
+        "tags": [
+          "Nota"
+        ],
+        "parameters": [
+          {
+            "name": "materia_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "aluno_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

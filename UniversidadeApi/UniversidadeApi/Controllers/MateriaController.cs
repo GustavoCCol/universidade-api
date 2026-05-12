@@ -17,23 +17,23 @@ namespace UniversidadeApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult ObterTodas()
         {
-            var materias = _materiaRepository.GetAll();
+            var materias = _materiaRepository.ObterTodas();
 
             return Ok(materias);
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public IActionResult Obter(int id)
         {
-            var materia = _materiaRepository.Get(id);
+            var materia = _materiaRepository.Obter(id);
 
             return Ok(materia);
         }
 
         [HttpPost]
-        public IActionResult Add([FromBody] MateriaDTO materia_recebida)
+        public IActionResult Adicionar([FromBody] MateriaDTO materia_recebida)
         {
             var materia = new Materia();
             {
@@ -42,13 +42,13 @@ namespace UniversidadeApi.Controllers
                 materia.NOME = materia_recebida.Nome;
             }
 
-            _materiaRepository.Add(materia);
+            _materiaRepository.Adicionar(materia);
 
             return Ok(materia);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] MateriaDTO materia_recebida)
+        public IActionResult Atualizar(int id, [FromBody] MateriaDTO materia_recebida)
         {
             var materia = new Materia();
             {
@@ -57,17 +57,17 @@ namespace UniversidadeApi.Controllers
                 materia.NOME = materia_recebida.Nome;
             }
 
-            _materiaRepository.Update(materia);
+            _materiaRepository.Atualizar(materia);
            
             return Ok(materia);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public IActionResult Deletar(int id)
         {
-            var materia_deletada = _materiaRepository.Get(id);
+            var materia_deletada = _materiaRepository.Obter(id);
             
-            _materiaRepository.Delete(materia_deletada);
+            _materiaRepository.Deletar(materia_deletada);
             
             return Ok(materia_deletada);
         }

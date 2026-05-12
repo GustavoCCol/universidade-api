@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\aluno_materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\aluno_materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\controllers\\aluno_materiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\controllers\\aluno_materiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,40 +11,64 @@
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\controllers\\materiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\controllers\\materiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\controllers\\notacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\controllers\\notacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\aluno_materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\aluno_materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\interfaces\\ialuno_materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\interfaces\\ialuno_materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\aluno_materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\aluno_materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\interfaces\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\interfaces\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\nota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\nota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\aluno_materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\aluno_materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\interfaces\\imateriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\interfaces\\imateriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\interfaces\\inotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\interfaces\\inotarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\controllers\\notacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\controllers\\notacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\aluno_materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\aluno_materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\materia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\models\\nota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\models\\nota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,40 +79,24 @@
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\interfaces\\imateriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\interfaces\\imateriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\notadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\notadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\aluno_materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\aluno_materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\context\\materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\context\\materiarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\alunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\alunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\controllers\\materiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\controllers\\materiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\materiadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\infrastucture\\interfaces\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\infrastucture\\interfaces\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\dtos\\notadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|solutionrelative:universidadeapi\\dtos\\notadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7EBDF98E-01C8-9045-69A0-9341964868EB}|UniversidadeApi\\UniversidadeApi.csproj|c:\\users\\p0600861\\desktop\\projetos\\escola\\universidadeapi\\universidadeapi\\universidadeapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -114,20 +114,189 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "NotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T14:48:41.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MateriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T11:51:24.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T13:26:12.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Aluno_MateriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\Aluno_MateriaRepository.cs",
               "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\Aluno_MateriaRepository.cs",
               "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\Aluno_MateriaRepository.cs",
               "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\Aluno_MateriaRepository.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwDYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T14:01:00.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotaController.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\NotaController.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\NotaController.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\NotaController.cs",
+              "RelativeToolTip": "UniversidadeApi\\Controllers\\NotaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:53:30.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MateriaController.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\MateriaController.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\MateriaController.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\MateriaController.cs",
+              "RelativeToolTip": "UniversidadeApi\\Controllers\\MateriaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T11:46:30.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "UniversidadeApi\\Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T13:16:42.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Aluno_MateriaController.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
+              "RelativeToolTip": "UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T12:48:43.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAluno_MateriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T12:47:33.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "IAlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T11:56:31.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IMateriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T11:50:38.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "INotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:57:15.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Aluno.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Models\\Aluno.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Aluno.cs",
+              "RelativeToolTip": "UniversidadeApi\\Models\\Aluno.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T13:25:49.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MateriaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\MateriaDTO.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\DTOs\\MateriaDTO.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\MateriaDTO.cs",
+              "RelativeToolTip": "UniversidadeApi\\DTOs\\MateriaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T12:25:07.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Aluno_Materia.cs",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Aluno_Materia.cs",
               "RelativeDocumentMoniker": "UniversidadeApi\\Models\\Aluno_Materia.cs",
@@ -140,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Materia.cs",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Materia.cs",
               "RelativeDocumentMoniker": "UniversidadeApi\\Models\\Materia.cs",
@@ -153,20 +322,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAluno_MateriaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\IAluno_MateriaRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "Nota.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Nota.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Models\\Nota.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Nota.cs",
+              "RelativeToolTip": "UniversidadeApi\\Models\\Nota.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T12:47:33.813Z",
+              "WhenOpened": "2026-04-30T14:04:59.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Program.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Program.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Program.cs",
+              "RelativeToolTip": "UniversidadeApi\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T14:16:44.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConnectionContext.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
+              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T13:38:15.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NotaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\NotaDTO.cs",
+              "RelativeDocumentMoniker": "UniversidadeApi\\DTOs\\NotaDTO.cs",
+              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\NotaDTO.cs",
+              "RelativeToolTip": "UniversidadeApi\\DTOs\\NotaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T13:54:35.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Aluno_MateriaDTO.cs",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\Aluno_MateriaDTO.cs",
               "RelativeDocumentMoniker": "UniversidadeApi\\DTOs\\Aluno_MateriaDTO.cs",
@@ -174,167 +382,11 @@
               "RelativeToolTip": "UniversidadeApi\\DTOs\\Aluno_MateriaDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T12:59:11.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T12:59:11.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Aluno_MateriaController.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
-              "RelativeToolTip": "UniversidadeApi\\Controllers\\Aluno_MateriaController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDAAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T12:48:43.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlunoController.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\AlunoController.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\AlunoController.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\AlunoController.cs",
-              "RelativeToolTip": "UniversidadeApi\\Controllers\\AlunoController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwCAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T13:16:42.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NotaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\NotaRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAkwCsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T14:48:41.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AlunoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\AlunoRepository.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T13:26:12.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Aluno.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Aluno.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Models\\Aluno.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Aluno.cs",
-              "RelativeToolTip": "UniversidadeApi\\Models\\Aluno.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T13:25:49.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NotaController.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\NotaController.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\NotaController.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\NotaController.cs",
-              "RelativeToolTip": "UniversidadeApi\\Controllers\\NotaController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwB0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T13:53:30.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "INotaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\INotaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T13:57:15.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Nota.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Nota.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Models\\Nota.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Models\\Nota.cs",
-              "RelativeToolTip": "UniversidadeApi\\Models\\Nota.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:04:59.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Program.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Program.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Program.cs",
-              "RelativeToolTip": "UniversidadeApi\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T14:16:44.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MateriaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\MateriaRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T11:51:24.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ConnectionContext.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Context\\ConnectionContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T13:38:15.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IMateriaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\IMateriaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T11:50:38.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\appsettings.json",
               "RelativeDocumentMoniker": "UniversidadeApi\\appsettings.json",
@@ -346,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "AlunoDTO.cs",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\AlunoDTO.cs",
               "RelativeDocumentMoniker": "UniversidadeApi\\DTOs\\AlunoDTO.cs",
@@ -358,31 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MateriaController.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\MateriaController.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Controllers\\MateriaController.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Controllers\\MateriaController.cs",
-              "RelativeToolTip": "UniversidadeApi\\Controllers\\MateriaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T11:46:30.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MateriaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\MateriaDTO.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\DTOs\\MateriaDTO.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\MateriaDTO.cs",
-              "RelativeToolTip": "UniversidadeApi\\DTOs\\MateriaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T12:25:07.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "UniversidadeApi\\Properties\\launchSettings.json",
@@ -391,30 +419,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-30T14:23:00.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IAlunoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
-              "RelativeToolTip": "UniversidadeApi\\Infrastucture\\Interfaces\\IAlunoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T11:56:31.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "NotaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\NotaDTO.cs",
-              "RelativeDocumentMoniker": "UniversidadeApi\\DTOs\\NotaDTO.cs",
-              "ToolTip": "C:\\Users\\p0600861\\Desktop\\Projetos\\Escola\\UniversidadeApi\\UniversidadeApi\\DTOs\\NotaDTO.cs",
-              "RelativeToolTip": "UniversidadeApi\\DTOs\\NotaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T13:54:35.239Z"
             },
             {
               "$type": "Document",
