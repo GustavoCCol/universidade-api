@@ -26,7 +26,7 @@ namespace UniversidadeApi.Infrastucture.Context
         {
             _context.Alunos.Remove(aluno);
             _context.SaveChanges();
-            Log.Information("Deletou um aluno aluno");
+            Log.Information("Deletou um aluno");
         }
 
         public List<Aluno> ObterTodos()

@@ -3,12 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UniversidadeApi.Models
 {
-    [Table("MATERIA", Schema = "ESCOLA")]
-    public class Materia
+    [Table("USUARIO", Schema = "ESCOLA")]
+    public class Usuario
     {
         [Key]
         public int ID { get; set; }
-        public string? PROFESSOR { get; set; }
-        public string? NOME { get; set; }
+        public string NOME { get; set; }
+        public string CPF { get; set; }
+        public string SENHA { get; set; }
     }
 }

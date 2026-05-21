@@ -12,6 +12,7 @@ namespace UniversidadeApi.Infrastucture.Context
         public DbSet<Aluno_Materia> Alunos_Materias { get; set; }
         public DbSet<Materia> Materias { get; set; }
         public DbSet<Nota> Notas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

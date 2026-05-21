@@ -1,11 +1,10 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
-using Microsoft.OpenApi.Reader;
+using Scalar.AspNetCore;
 using Serilog;
-using Serilog.Events;
-using System.Configuration;
-using System.Text.Json.Serialization;
+using System.Text;
 using UniversidadeApi.Infrastucture.Context;
 using UniversidadeApi.Infrastucture.Interfaces;
 
@@ -28,24 +27,69 @@ builder.Services.AddTransient<IAlunoRepository, AlunoRepository>();
 builder.Services.AddTransient<IAluno_MateriaRepository, Aluno_MateriaRepository>();
 builder.Services.AddTransient<IMateriaRepository, MateriaRepository>();
 builder.Services.AddTransient<INotaRepository, NotaRepository>();
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
-builder.Services.AddDbContext<ConnectionContext>(options => options.UseOracle("Data Source=localhost:1521/xepdb1;User ID=UNIVERSIDADE;Password=senha123;Persist Security Info=True; Connect Timeout=3000;"));
+builder.Services.AddDbContext<ConnectionContext>(options => options.UseOracle("Data Source=localhost:1521/xepdb1;User ID=ESCOLA;Password=senha123;Persist Security Info=True; Connect Timeout=3000;"));
 
-builder.Services.AddSwaggerGen(options =>
+var key = Encoding.UTF8.GetBytes(UniversidadeApi.Configuration.PrivateKey);
+
+builder.Services.AddAuthentication(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(op =>
+{
+    op.RequireHttpsMetadata = false;
+    op.SaveToken = true;
+    op.TokenValidationParameters = new TokenValidationParameters
     {
-        Title = "UNIVERSIDADE",
-        Version = "v1"
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateLifetime = true
+    };
+});
+
+builder.Services.AddOpenApi("escola", options =>
+{
+    options.AddDocumentTransformer((documento, contexto, CancellationToken) =>
+    {
+        documento.Info = new()
+        {
+            Title = "Projeto API escola.",
+            Description = "Desenvolvido em .net 10",
+            Version = "0.1"
+        };
+        documento.Servers = 
+        [
+            new() {Url = "https://localhost:7245", Description = "Servidor local"}
+        ];
+        documento.ExternalDocs = new()
+        {
+            Description = "Documentação externa",
+            Url = new Uri("https://youtube.com.br")
+        };
+        return Task.CompletedTask;
     });
 });
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+app.MapOpenApi("/doc/{documentName}.json");
+
+app.MapScalarApiReference("/ide/scalar", options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options => { options.SwaggerEndpoint("/swagger/v1/swagger.json", "Universidade Api V1");});
+    options.Title = "Teste em scalar";
+    options.AddDocument("escola", "Api escola");
+    options.WithOpenApiRoutePattern("/doc/{documentName}.json");
+
+    //Custumização
+    options.WithTheme(ScalarTheme.BluePlanet);
+});
+
+if (app.Environment.IsDevelopment())
+{    
 }
 
 app.UseHttpsRedirection();

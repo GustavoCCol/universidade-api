@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UniversidadeApi.Models
 {
-    [Table("ALUNO", Schema = "UNIVERSIDADE")]
+    [Table("ALUNO", Schema = "ESCOLA")]
     public class Aluno
     {
         [Key]
