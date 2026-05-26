@@ -17,23 +17,23 @@ namespace UniversidadeApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult ObterTodas()
+        public async Task<IActionResult> ObterTodas()
         {
-            var materias = _materiaRepository.ObterTodas();
+            var materias = await _materiaRepository.ObterTodos();
 
             return Ok(materias);
         }
 
         [HttpGet("{id}")]
-        public IActionResult Obter(int id)
+        public async Task<IActionResult> Obter(int id)
         {
-            var materia = _materiaRepository.Obter(id);
+            var materia = await _materiaRepository.ObterPorId(id);
 
             return Ok(materia);
         }
 
         [HttpPost]
-        public IActionResult Adicionar([FromBody] MateriaDTO materia_recebida)
+        public async Task<IActionResult> Adicionar([FromBody] MateriaDTO materia_recebida)
         {
             var materia = new Materia();
             {
@@ -42,13 +42,13 @@ namespace UniversidadeApi.Controllers
                 materia.NOME = materia_recebida.Nome;
             }
 
-            _materiaRepository.Adicionar(materia);
+            await _materiaRepository.Adicionar(materia);
 
             return Ok(materia);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Atualizar(int id, [FromBody] MateriaDTO materia_recebida)
+        public async Task<IActionResult> Atualizar(int id, [FromBody] MateriaDTO materia_recebida)
         {
             var materia = new Materia();
             {
@@ -57,19 +57,16 @@ namespace UniversidadeApi.Controllers
                 materia.NOME = materia_recebida.Nome;
             }
 
-            _materiaRepository.Atualizar(materia);
+            await _materiaRepository.Atualizar(materia);
            
             return Ok(materia);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Deletar(int id)
-        {
-            var materia_deletada = _materiaRepository.Obter(id);
-            
-            _materiaRepository.Deletar(materia_deletada);
-            
-            return Ok(materia_deletada);
+        public async Task<IActionResult> Deletar(int id)
+        {   
+            await _materiaRepository.Deletar(id);
+            return Ok();
         }
     }
 }

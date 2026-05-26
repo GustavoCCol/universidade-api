@@ -4,10 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace UniversidadeApi.Models
 {
     [Table("NOTA", Schema = "ESCOLA")]
-    public class Nota
+    public class Nota : Base
     {
-        [Key]
-        public int ID { get; set; }
         public int MATERIA_ID { get; set; }
         public int ALUNO_ID { get; set; }
         public int BIMESTRE { get; set; }

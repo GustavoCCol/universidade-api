@@ -17,9 +17,9 @@ namespace UniversidadeApi.Controllers
         {
             _usuarioRepository = usuarioRepository ?? throw new ArgumentNullException(nameof(usuarioRepository));
         }
-
+        [Authorize]
         [HttpPost]
-        public IActionResult Adicionar([FromBody] UsuarioDTO usuario_recebido)
+        public async Task<IActionResult> Adicionar([FromBody] UsuarioDTO usuario_recebido)
         {
             var usuario_adicionado = new Usuario
             {
@@ -29,13 +29,13 @@ namespace UniversidadeApi.Controllers
                 ID = usuario_recebido.Id
             };
 
-            _usuarioRepository.Adicionar(usuario_adicionado);
+            await _usuarioRepository.Adicionar(usuario_adicionado);
 
             return Ok(usuario_adicionado);
         }
-
+        [Authorize]
         [HttpPut("{id}")]
-        public IActionResult Atualizar([FromBody] UsuarioDTO usuario_recebido, int id)
+        public async Task<IActionResult> Atualizar([FromBody] UsuarioDTO usuario_recebido, int id)
         {
             var usuario_atualizado = new Usuario
             {
@@ -45,37 +45,34 @@ namespace UniversidadeApi.Controllers
                 ID = id
             };
 
-            _usuarioRepository.Atualizar(usuario_atualizado);
+            await _usuarioRepository.Atualizar(usuario_atualizado);
 
             return Ok(usuario_atualizado);
         }
-
+        [Authorize]
         [HttpDelete("{id}")]
-        public IActionResult Deletar(int id)
+        public async Task<IActionResult> Deletar(int id)
         {
-            var usuario_deletado = _usuarioRepository.Obter(id);
-
-            _usuarioRepository.Deletar(usuario_deletado);
-
-            return Ok(usuario_deletado);
+            await _usuarioRepository.Deletar(id);
+            return Ok();
         }
         [Authorize]
         [HttpGet]
-        public IActionResult ObterTodos()
+        public async Task<IActionResult> ObterTodos()
         {
-            return Ok(_usuarioRepository.ObterTodos());
+            return Ok(await _usuarioRepository.ObterTodos());
         }
 
         [HttpGet("{id}")]
-        public IActionResult Obter(int id)
+        public async Task<IActionResult> Obter(int id)
         {
-            return Ok(_usuarioRepository.Obter(id));
+            return Ok(await _usuarioRepository.ObterPorId(id));
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody]LoginDTO login_info)
+        public async Task<IActionResult> Login([FromBody]LoginDTO login_info)
         {
-            var token = _usuarioRepository.Login(login_info);
+            var token = await _usuarioRepository.Login(login_info);
             if (string.IsNullOrEmpty(token)) Unauthorized("Senha ou cpf incorreto");
             return Ok(new {token});
         }

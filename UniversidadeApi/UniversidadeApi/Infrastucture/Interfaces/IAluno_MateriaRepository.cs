@@ -3,15 +3,10 @@ using UniversidadeApi.DTOs;
 
 namespace UniversidadeApi.Infrastucture.Interfaces
 {
-    public interface IAluno_MateriaRepository
+    public interface IAluno_MateriaRepository : IBaseRepository<Aluno_Materia>
     {
-        List<Aluno_Materia> ObterTodos();
-        IEnumerable<Object> ObterTodosDesc(); 
-        IEnumerable<Object> ObterCadastrosAlunoPorId(int id);
-        IEnumerable<Object> ObterCadastrosMateriaPorId(int id);
-        Aluno_Materia Obter(int id);
-        void Adicionar(Aluno_Materia aluno_Materia);
-        void Atualizar(Aluno_Materia aluno_Materia);
-        void Deletar(Aluno_Materia aluno_Materia);
+        Task<IEnumerable<Object>> ObterTodosDesc(); 
+        Task<IEnumerable<Object>> ObterCadastrosAlunoPorId(int id);
+        Task<IEnumerable<Object>> ObterCadastrosMateriaPorId(int id);
     }
 }

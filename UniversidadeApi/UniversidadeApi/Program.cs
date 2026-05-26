@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
+using MimeKit;
 using Scalar.AspNetCore;
 using Serilog;
 using System.Text;
+using UniversidadeApi.Application.Services;
 using UniversidadeApi.Infrastucture.Context;
 using UniversidadeApi.Infrastucture.Interfaces;
 
@@ -23,15 +25,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
-builder.Services.AddTransient<IAlunoRepository, AlunoRepository>();
-builder.Services.AddTransient<IAluno_MateriaRepository, Aluno_MateriaRepository>();
-builder.Services.AddTransient<IMateriaRepository, MateriaRepository>();
-builder.Services.AddTransient<INotaRepository, NotaRepository>();
-builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+builder.Services.AddTransient<IAlunoRepository, AlunoService>();
+builder.Services.AddTransient<IAluno_MateriaRepository, Aluno_MateriaService>();
+builder.Services.AddTransient<IMateriaRepository, MateriaService>();
+builder.Services.AddTransient<INotaRepository, NotaService>();
+builder.Services.AddTransient<IUsuarioRepository, UsuarioService>();
 
 builder.Services.AddDbContext<ConnectionContext>(options => options.UseOracle("Data Source=localhost:1521/xepdb1;User ID=ESCOLA;Password=senha123;Persist Security Info=True; Connect Timeout=3000;"));
-
-var key = Encoding.UTF8.GetBytes(UniversidadeApi.Configuration.PrivateKey);
 
 builder.Services.AddAuthentication(options =>
 {
@@ -44,9 +45,11 @@ builder.Services.AddAuthentication(options =>
     op.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("}bCIx{:,oR1p%(aHq4M$jRu6RC[^b{U?BG{9nA0YF^p")),
+        ValidateIssuer = true,
+        ValidIssuer = "Api",
+        ValidateAudience = true,
+        ValidAudience = "Cliente",
         ValidateLifetime = true
     };
 });
@@ -76,23 +79,23 @@ builder.Services.AddOpenApi("escola", options =>
 
 var app = builder.Build();
 
-app.MapOpenApi("/doc/{documentName}.json");
-
-app.MapScalarApiReference("/ide/scalar", options =>
-{
-    options.Title = "Teste em scalar";
-    options.AddDocument("escola", "Api escola");
-    options.WithOpenApiRoutePattern("/doc/{documentName}.json");
-
-    //Custumização
-    options.WithTheme(ScalarTheme.BluePlanet);
-});
-
 if (app.Environment.IsDevelopment())
-{    
+{
+    app.MapOpenApi("/doc/{documentName}.json");
+
+    app.MapScalarApiReference("/ide/scalar", options =>
+    {
+        options.Title = "Api escola";
+        options.AddDocument("escola", "Api escola");
+        options.WithOpenApiRoutePattern("/doc/{documentName}.json");
+        //Custumização
+        options.WithTheme(ScalarTheme.BluePlanet);
+    });
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -18,42 +18,42 @@ namespace UniversidadeApi.Controllers
         }
         
         [HttpGet]
-        public IActionResult ObterTodas()
+        public async Task<IActionResult> ObterTodas()
         {
-            var notas = _notaRepository.ObterTodas();
+            var notas = await _notaRepository.ObterTodos();
             return Ok(notas);
         }
 
         [HttpGet("descricao")]
-        public IActionResult ObterTodasDesc()
+        public async Task<IActionResult> ObterTodasDesc()
         {
-            var notas_res = _notaRepository.ObterTodasDesc();
+            var notas_res = await _notaRepository.ObterTodasDesc();
             return Ok(notas_res);
         }
 
         [HttpGet("{id}")]
-        public IActionResult Obter(int id)
+        public async Task<IActionResult> Obter(int id)
         {
-            var nota = _notaRepository.Obter(id);
+            var nota = await _notaRepository.ObterPorId(id);
             return Ok(nota);
         }
 
         [HttpGet("bimestre/{bimestre}/{aluno_id}")]
-        public IActionResult ObterPorBimestre(int bimestre, int aluno_id)
+        public async Task<IActionResult> ObterPorBimestre(int bimestre, int aluno_id)
         {
-            var notas = _notaRepository.ObterPorBimestre(bimestre, aluno_id);
+            var notas = await _notaRepository.ObterPorBimestre(bimestre, aluno_id);
             if (notas == null) return NotFound("Aluno ou bimestre inválido");
             return Ok(notas);
         }
         [HttpGet("materia/{materia_id}/{aluno_id}")]
-        public IActionResult ObterPorMateria(int materia_id, int aluno_id)
+        public async Task<IActionResult> ObterPorMateria(int materia_id, int aluno_id)
         {
-            var notas = _notaRepository.ObterPorMateria(materia_id, aluno_id);
+            var notas = await _notaRepository.ObterPorMateria(materia_id, aluno_id);
             if (notas == null) return NotFound("Aluno ou materia inválido(a)");
             return Ok(notas);
         }
         [HttpPost]
-        public IActionResult Adicionar([FromBody] NotaDTO nota_recebida)
+        public async Task<IActionResult> Adicionar([FromBody] NotaDTO nota_recebida)
         {
             var nota = new Nota();
             {
@@ -63,13 +63,13 @@ namespace UniversidadeApi.Controllers
                 nota.NOTA = nota_recebida.Nota;
             }
 
-            bool add = _notaRepository.Adicionar(nota);
+            bool add = await _notaRepository.AdicionarNota(nota);
             if (!add) return BadRequest("Não foi possível adicionar nota, verificar valores colocados");
             return Ok(nota);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Atualizar(int id, [FromBody] NotaDTO nota_recebida)
+        public async Task<IActionResult> Atualizar(int id, [FromBody] NotaDTO nota_recebida)
         {
             var nota = new Nota();
             {
@@ -80,16 +80,15 @@ namespace UniversidadeApi.Controllers
                 nota.NOTA = nota_recebida.Nota;
             }
 
-            _notaRepository.Atualizar(nota);
+            await _notaRepository.Atualizar(nota);
 
             return Ok(nota);
         }
         [HttpDelete("{id}")]
-        public IActionResult Deletar(int id)
+        public async Task<IActionResult> Deletar(int id)
         {
-            var nota = _notaRepository.Obter(id);
-            _notaRepository.Deletar(nota);
-            return Ok(nota);
+            await _notaRepository.Deletar(id);
+            return Ok();
         }
     }
 }

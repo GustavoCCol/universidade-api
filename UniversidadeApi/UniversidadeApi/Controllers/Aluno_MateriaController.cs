@@ -17,38 +17,38 @@ namespace UniversidadeApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult ObterTodos()
+        public async Task<IActionResult> ObterTodos()
         {
-            var alunos_materias = _aluno_MateriaRepository.ObterTodos();
+            var alunos_materias = await _aluno_MateriaRepository.ObterTodos();
 
             return Ok(alunos_materias);
         }
 
         [HttpGet("descricao")]
-        public IActionResult ObterTodosDesc()
+        public async Task<IActionResult> ObterTodosDesc()
         {
-            var aluno_materia_res = _aluno_MateriaRepository.ObterTodosDesc();
+            var aluno_materia_res = await _aluno_MateriaRepository.ObterTodosDesc();
 
             return Ok(aluno_materia_res);
         }
 
         [HttpGet("cadastros/aluno/{id}")]
-        public IActionResult ObterCadastrosAlunoPorId(int id)
+        public async Task<IActionResult> ObterCadastrosAlunoPorId(int id)
         {
-            var cadastros = _aluno_MateriaRepository.ObterCadastrosAlunoPorId(id);
+            var cadastros = await _aluno_MateriaRepository.ObterCadastrosAlunoPorId(id);
             if (cadastros == null) return NotFound($"Nenhum cadastro encontrado para o aluno {id}");
             return Ok(cadastros);
         }
 
         [HttpGet("cadastros/materia/{id}")]
-        public IActionResult ObterCadastrosMateriaPorId (int id)
+        public async Task<IActionResult> ObterCadastrosMateriaPorId (int id)
         {
-            var cadastros = _aluno_MateriaRepository.ObterCadastrosMateriaPorId(id);
+            var cadastros = await _aluno_MateriaRepository.ObterCadastrosMateriaPorId(id);
             if (cadastros == null) return NotFound($"Nenhum cadastro encontrado para a matéria {id}");
             return Ok(cadastros);
         }
         [HttpPost]
-        public IActionResult Adicionar([FromBody] Aluno_MateriaDTO aluno_materia_recebido)
+        public async Task<IActionResult> Adicionar([FromBody] Aluno_MateriaDTO aluno_materia_recebido)
         {
             var aluno_materia = new Aluno_Materia();
             {
@@ -56,13 +56,13 @@ namespace UniversidadeApi.Controllers
                 aluno_materia.ALUNO_ID = aluno_materia_recebido.Aluno_id;
             }
 
-            _aluno_MateriaRepository.Adicionar(aluno_materia);
+            await _aluno_MateriaRepository.Adicionar(aluno_materia);
 
             return Ok(aluno_materia);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Atualizar(int id, [FromBody] Aluno_MateriaDTO aluno_materia_recebido)
+        public async Task<IActionResult> Atualizar(int id, [FromBody] Aluno_MateriaDTO aluno_materia_recebido)
         {
             var aluno_materia = new Aluno_Materia();
             {
@@ -71,18 +71,16 @@ namespace UniversidadeApi.Controllers
                 aluno_materia.ALUNO_ID = aluno_materia_recebido.Aluno_id;
             }
 
-            _aluno_MateriaRepository.Atualizar(aluno_materia);
+            await _aluno_MateriaRepository.Atualizar(aluno_materia);
 
             return Ok(aluno_materia);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Deletar(int id)
+        public async Task<IActionResult> Deletar(int id)
         {
-            var aluno_materia = _aluno_MateriaRepository.Obter(id);
-
-            _aluno_MateriaRepository.Deletar(aluno_materia);
-            return Ok(aluno_materia);
+            await _aluno_MateriaRepository.Deletar(id);
+            return Ok();
         }
     }
 }

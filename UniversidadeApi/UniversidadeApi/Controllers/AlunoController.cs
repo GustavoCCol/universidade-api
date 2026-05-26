@@ -21,16 +21,16 @@ namespace UniversidadeApi.Controllers
         CultureInfo br = new CultureInfo("pt-BR");
 
         [HttpGet]
-        public IActionResult ObterTodos()
+        public async Task<IActionResult> ObterTodos()
         {
-            var alunos = _alunoRepository.ObterTodos();
+            var alunos = await _alunoRepository.ObterTodos();
 
             return Ok(alunos);
         }
         [HttpGet("{id}")]
-        public IActionResult Obter(int id)
+        public async Task<IActionResult> ObterPorId(int id)
         {
-            var aluno = _alunoRepository.Obter(id);
+            var aluno = await _alunoRepository.ObterPorId(id);
             
             if (aluno == null)
             {
@@ -41,7 +41,7 @@ namespace UniversidadeApi.Controllers
         }
         
         [HttpPost]
-        public IActionResult Adicionar([FromBody] AlunoDTO aluno_recebido)
+        public async Task<IActionResult> Adicionar([FromBody] AlunoDTO aluno_recebido)
         {
             Aluno aluno = new Aluno();
             {
@@ -56,13 +56,13 @@ namespace UniversidadeApi.Controllers
                 aluno.DATA_INGRESSO = ingresso_aluno;
             }
             
-            _alunoRepository.Adicionar(aluno);
+            await _alunoRepository.Adicionar(aluno);
 
-            return Ok();
+            return Ok(aluno);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Atualizar(int id, [FromBody] AlunoDTO aluno_recebido)
+        public async Task<IActionResult> Atualizar(int id, [FromBody] AlunoDTO aluno_recebido)
         {
             Aluno aluno = new Aluno();
             {
@@ -78,18 +78,16 @@ namespace UniversidadeApi.Controllers
 
                 aluno.ID = id;
             }
-            _alunoRepository.Atualizar(aluno);
+            await _alunoRepository.Atualizar(aluno);
             
             return Ok(aluno);
         }
 
         [HttpDelete("{id}")]
-
-        public void Deletar(int id)
+        public async Task<IActionResult> Deletar(int id)
         {
-            var aluno_deletado = _alunoRepository.Obter(id);
-            
-            _alunoRepository.Deletar(aluno_deletado);
+            await _alunoRepository.Deletar(id);
+            return Ok();
         }
 
     }

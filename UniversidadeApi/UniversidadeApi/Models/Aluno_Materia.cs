@@ -4,10 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace UniversidadeApi.Models
 {
     [Table("ALUNO_MATERIA", Schema = "ESCOLA")]
-    public class Aluno_Materia
+    public class Aluno_Materia : Base
     {
-        [Key]
-        public int ID { get; set; }
         public int MATERIA_ID { get; set; }
         public int ALUNO_ID { get; set; }
         [ForeignKey("ALUNO_ID")]
