@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using UniversidadeApi.Infrastucture.Interfaces;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using UniversidadeApi.DTOs;
+using UniversidadeApi.Infrastucture.Interfaces;
 using UniversidadeApi.Models;
 
 namespace UniversidadeApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class MateriaController : ControllerBase
     {
         private readonly IMateriaRepository _materiaRepository;

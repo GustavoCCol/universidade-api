@@ -62,7 +62,7 @@ namespace UniversidadeApi.Controllers
         {
             return Ok(await _usuarioRepository.ObterTodos());
         }
-
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> Obter(int id)
         {

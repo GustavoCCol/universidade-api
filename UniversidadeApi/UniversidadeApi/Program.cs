@@ -5,7 +5,9 @@ using Microsoft.OpenApi;
 using MimeKit;
 using Scalar.AspNetCore;
 using Serilog;
+using System.Reflection.Metadata;
 using System.Text;
+using System.Xml.Linq;
 using UniversidadeApi.Application.Services;
 using UniversidadeApi.Infrastucture.Context;
 using UniversidadeApi.Infrastucture.Interfaces;
@@ -73,6 +75,19 @@ builder.Services.AddOpenApi("escola", options =>
             Description = "Documentação externa",
             Url = new Uri("https://youtube.com.br")
         };
+        documento.Components ??= new();
+        documento.Components.SecuritySchemes = new Dictionary<string, IOpenApiSecurityScheme>();
+
+        documento.Components.SecuritySchemes["Bearer"] =
+            new OpenApiSecurityScheme
+            {
+                Type = SecuritySchemeType.Http,
+                Scheme = "bearer",
+                BearerFormat = "JWT",
+                In = ParameterLocation.Header,
+                Name = "Authorization",
+                Description = "Digite o token JWT"
+            };
         return Task.CompletedTask;
     });
 });
@@ -88,6 +103,11 @@ if (app.Environment.IsDevelopment())
         options.Title = "Api escola";
         options.AddDocument("escola", "Api escola");
         options.WithOpenApiRoutePattern("/doc/{documentName}.json");
+        options.AddPreferredSecuritySchemes("Bearer")
+        .AddHttpAuthentication("Bearer", auth =>
+        {
+            auth.Token = "";
+        }).EnablePersistentAuthentication();
         //Custumização
         options.WithTheme(ScalarTheme.BluePlanet);
     });

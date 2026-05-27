@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Serilog;
 using System.Globalization;
 using UniversidadeApi.DTOs;
@@ -9,6 +10,7 @@ namespace UniversidadeApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class AlunoController : ControllerBase
     {
         private readonly IAlunoRepository _alunoRepository;

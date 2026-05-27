@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using UniversidadeApi.DTOs;
 using UniversidadeApi.Infrastucture.Context;
 using UniversidadeApi.Infrastucture.Interfaces;
@@ -8,6 +9,7 @@ namespace UniversidadeApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class NotaController : ControllerBase
     {
         private readonly INotaRepository _notaRepository;
